@@ -1,0 +1,34 @@
+import {  Cite, Slide, Heading, Text, Layout, Fill, Image, CodePane,} from 'spectacle';
+import {DarkSlide, CodeSlide, TitleSlide} from 'components/slides';
+
+
+# This slide is from a third MDX file
+
+export default TitleSlide
+
+---
+
+
+## Here's the complete contents of a text file
+
+import textFile from "./examples/text-file.txt";
+
+<CodePane source={textFile} />
+
+
+---
+
+import counter from "./examples/counter";
+
+## And some syntax-highlighted code!
+
+<Layout>
+    <Fill>
+        <CodePane source={counter} lang="jsx" />
+    </Fill>
+    <Fill>
+        Throw in some layout stuff while we're at it
+    </Fill>
+</Layout>
+
+
